@@ -5,7 +5,7 @@
         src: '{{source}}'
         dest: '{{destination}}'
     
-    - name: Copying to tomcat webapp
+    - name: Copying files to tomcat webapp
       command: nohup  cp '{{destination}}' '{{tomcatwebapp}}'
 
     - name: Shutting down tomcat server
